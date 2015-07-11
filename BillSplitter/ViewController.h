@@ -10,6 +10,12 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *billSplitLabel;
+- (IBAction)splitBill:(id)sender;
 
+@property (weak, nonatomic) IBOutlet UISlider *numberOfPeople;
+@property (weak, nonatomic) IBOutlet UITextField *billTotal;
+
+- (IBAction)sliderAction:(id)sender;
 @end
 

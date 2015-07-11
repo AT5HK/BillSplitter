@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "Calculate.h"
 
 @interface ViewController ()
+
+@property (nonatomic) Calculate *calculate;
 
 @end
 
@@ -16,7 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.calculate = [[Calculate alloc]init];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,4 +27,30 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - touch events
+
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    
+    [self.billTotal resignFirstResponder];
+    
+}
+
+#pragma mark - UIControl set label events
+
+- (IBAction)splitBill:(id)sender {
+    
+    
+    NSString *labelAmountText = [NSString stringWithFormat:@"$%.2f Per a Person",
+                                [self.calculate calculateBillSplit:self.billTotal.text     betweenNumberOfPeople:self.numberOfPeople.value]];
+    self.billSplitLabel.text = labelAmountText;
+    
+}
+
+- (IBAction)sliderAction:(id)sender {
+    
+    NSString *labelAmountText = [NSString stringWithFormat:@"$%.2f Per a Person",
+                                 [self.calculate calculateBillSplit:self.billTotal.text     betweenNumberOfPeople:self.numberOfPeople.value]];
+    self.billSplitLabel.text = labelAmountText;
+    
+}
 @end

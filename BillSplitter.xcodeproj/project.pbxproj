@@ -14,6 +14,7 @@
 		50729E8C1B51C9E5005AC1E9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50729E8B1B51C9E5005AC1E9 /* Images.xcassets */; };
 		50729E8F1B51C9E6005AC1E9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50729E8D1B51C9E6005AC1E9 /* LaunchScreen.xib */; };
 		50729E9B1B51C9E6005AC1E9 /* BillSplitterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 50729E9A1B51C9E6005AC1E9 /* BillSplitterTests.m */; };
+		50729EA61B51CB57005AC1E9 /* Calculate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50729EA51B51CB57005AC1E9 /* Calculate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		50729E941B51C9E6005AC1E9 /* BillSplitterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BillSplitterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		50729E991B51C9E6005AC1E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50729E9A1B51C9E6005AC1E9 /* BillSplitterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BillSplitterTests.m; sourceTree = "<group>"; };
+		50729EA41B51CB57005AC1E9 /* Calculate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calculate.h; sourceTree = "<group>"; };
+		50729EA51B51CB57005AC1E9 /* Calculate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calculate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				50729E831B51C9E5005AC1E9 /* AppDelegate.m */,
 				50729E851B51C9E5005AC1E9 /* ViewController.h */,
 				50729E861B51C9E5005AC1E9 /* ViewController.m */,
+				50729EA41B51CB57005AC1E9 /* Calculate.h */,
+				50729EA51B51CB57005AC1E9 /* Calculate.m */,
 				50729E881B51C9E5005AC1E9 /* Main.storyboard */,
 				50729E8B1B51C9E5005AC1E9 /* Images.xcassets */,
 				50729E8D1B51C9E6005AC1E9 /* LaunchScreen.xib */,
@@ -219,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50729EA61B51CB57005AC1E9 /* Calculate.m in Sources */,
 				50729E871B51C9E5005AC1E9 /* ViewController.m in Sources */,
 				50729E841B51C9E5005AC1E9 /* AppDelegate.m in Sources */,
 				50729E811B51C9E5005AC1E9 /* main.m in Sources */,
